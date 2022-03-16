@@ -2,7 +2,7 @@
 Repository reserved for carrying out exercises in Python
 
 
-Exercice 1
+`Ten Minute Walk`
 
 You live in the city of Cartesia where all roads are laid out in a perfect grid. 
 You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go for a short walk. 
@@ -14,3 +14,11 @@ and will, of course, return you to your starting point. Return false otherwise.
 
 Note: you will always receive a valid array (string in COBOL) containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). 
 It will never give you an empty array (that's not a walk, that's standing still!).
+
+`Sum of two lowest positive integers`
+
+Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+
+[10, 343445353, 3453445, 3453545353453] should return 3453455.
