@@ -66,6 +66,7 @@ Example
 "(( @"     =>  "))((" 
 
 `Ones and Zeros` --> 7
+
 Given an array of ones and zeroes, convert the equivalent binary value to an integer.
 
 Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
@@ -76,4 +77,11 @@ Testing: [0, 0, 1, 0] ==> 2
 Testing: [0, 1, 0, 1] ==> 5
 
 
+`Multiples of 3 or 5` --> 8
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number is negative, return 0 (for languages that do have them).
+
+Note: If the number is a multiple of both 3 and 5, only count it once.
 
