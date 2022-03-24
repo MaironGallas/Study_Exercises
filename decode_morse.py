@@ -12,7 +12,8 @@ MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
                     '7':'--...', '8':'---..', '9':'----.',
                     '0':'-----', ', ':'--..--', '.':'.-.-.-',
                     '?':'..--..', '/':'-..-.', '-':'-....-',
-                    '(':'-.--.', ')':'-.--.-'}
+                    '(':'-.--.', ')':'-.--.-', 'SOS':'...---...',
+                    '!':'-.-.--'}
 
 def decode_morse(message):
     # extra space added at the end to access the
@@ -21,14 +22,13 @@ def decode_morse(message):
 
     decipher = ''
     citext = ''
+    i = 0
     for letter in message:
         if (letter != ' '):
             i = 0
             citext += letter
         else:
-
             i += 1
-
             if i == 3:
                 decipher += ' '
             else:
@@ -38,4 +38,4 @@ def decode_morse(message):
                     decipher += list(MORSE_CODE_DICT.keys())[list(MORSE_CODE_DICT.values()).index(citext)]
                     citext = ''
 
-    return decipher
+    return decipher.strip(" ")
